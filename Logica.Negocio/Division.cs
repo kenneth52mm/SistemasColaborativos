@@ -1,8 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
 namespace Logica.Negocio
 {
-    public class Suma
+    class Division
     {
         public double Operar(double operandoUno, double operandoDos)
         {
@@ -10,6 +13,5 @@ namespace Logica.Negocio
             elResultado = operandoUno + operandoDos;
             return (elResultado);
         }
-
     }
 }

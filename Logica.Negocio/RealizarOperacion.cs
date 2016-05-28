@@ -13,27 +13,26 @@ namespace Logica.Negocio
         {
             double elResultado = 0.0;
 
-            // invoque al método correspondiente
             switch (operador)
             {
                 case "+":
-                    var laReferencia = new Suma();
-                    elResultado = laReferencia.Operar(operandoUno, operandoDos);
+                    
+                    elResultado = new Suma().Operar(operandoUno, operandoDos);
                     break;
 
-/*
+
                 case "-":
-                    elResultado = Resta.Operar(operandoUno, operandoDos);
+                    elResultado = new Resta().Operar(operandoUno, operandoDos);
                     break;
 
                 case "*":
-                    elResultado = Multiplicacion.Operar(operandoUno, operandoDos);
+                    elResultado = new  Multiplicacion().Operar(operandoUno, operandoDos);
                     break;
 
                 case "/":
-                    elResultado = Division.Operar(operandoUno, operandoDos);
+                    elResultado = new Division().Operar(operandoUno, operandoDos);
                     break;
-*/
+
             }
             return (elResultado);
         }
